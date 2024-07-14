@@ -62,4 +62,8 @@ A comfortable saddle is essential for longer rides.
 ![Saddle](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/images%20(19).jpg?raw=true)
 Pedals:
 Platform pedals with good grip.
-![Pedals]()
+![Pedals](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/images%20(21).jpg?raw=true)
+
+## Band Pass Filter
+In this task I attempt to build a 2nd order band pass filter using OpAmp OP747(LTSpice didn't have OP741).
+
