@@ -87,4 +87,5 @@ The top row of numbers is the first number in the sum. The second row is the sec
 In this task I built a voltage multiplier circuit using a timer circuit using 555 IC and an inverter timer circuit using an N-Channel MOSFET and the multiplier circuit consisting of diodes and capacitor pumps. The input voltage of 9V gets tripled to 27V(Not considering diode drops).
 
 This GIF shows the Oscilloscope graph in TinkerCad first in Timer/Inverted Timer, then doubled output, tripled output and then finally near stable tripled output. The oscilloscope on the left is always showing output across the 555 timer output. The oscilloscope on the right varies its output across the different points of the diode capacitor pump circuit to show the multiplied output.
-![Voltage Multiplier](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Voltage%20Multiplier.gif?raw=true)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QgBlGBeQMCM?si=C9ae9K8EbFPN05e7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
