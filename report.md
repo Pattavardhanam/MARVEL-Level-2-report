@@ -67,3 +67,24 @@ Platform pedals with good grip.
 ## Band Pass Filter
 In this task I attempt to build a 2nd order band pass filter using OpAmp OP747(LTSpice didn't have OP741).
 
+I have designed the band pass filer based on the Butterworth filter. This filter is designed to band pass frequencies between 3kHz and 11kHz
+![Band Pass](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-07-14%20152835.png?raw=true)
+![Band Pass](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/WhatsApp%20Image%202024-07-14%20at%2011.00.31_d3b20e15.jpg?raw=true)
+## Logic design:
+I had learnt binary addition and binary number representation using 1's complement and 2's complement in 2nd PU. I learnt how full adders and 2x1 MUXs work. Using XOR gate, NOT gate(To give XNOR values), AND gate and OR Gate I designed a full adder circuit.
+This is the full adder truth table:
+![Full Adder TT](https://github.com/Pattavardhanam/MARVEL-Level-1-Report/blob/main/Pics/Full%20adder%20Truth%20table.png?raw=true)
+This is the implementation of the same:
+![FAI](https://github.com/Pattavardhanam/MARVEL-Level-1-Report/blob/main/Pics/Full%20Adder%20Implementation.png?raw=true)
+![Full Adder](https://github.com/Pattavardhanam/MARVEL-Level-1-Report/blob/main/Pics/Full%20adder%20GIF.gif?raw=true)
+This is the simulation of the adder circuit. [The link to the adder simuation](https://circuitverse.org/users/235959/projects/full-adder-using-mux-f6b940c1-7610-4385-b890-ccf287be4230)
+I then made a 4-bit binary additon circuit using 4 full adders using 2x1 MUX(Read the numbers from right to left):
+[The link to the 4-bit adder simuation](https://circuitverse.org/users/235959/projects/4-bit-binary-adder-using-mux)
+The top row of numbers is the first number in the sum. The second row is the second number. This example illustrates the addition of 3 and 2. (Read from the right and written left to right) 0011+0010=0101. 0101 is 5
+![4-bit Adder](https://github.com/Pattavardhanam/MARVEL-Level-1-Report/blob/main/Pics/4-bit%20adder.png?raw=true) 
+
+## Voltage Multiplier
+In this task I built a voltage multiplier circuit using a timer circuit using 555 IC and an inverter timer circuit using an N-Channel MOSFET and the multiplier circuit consisting of diodes and capacitor pumps. The input voltage of 9V gets tripled to 27V(Not considering diode drops).
+
+This GIF shows the Oscilloscope graph in TinkerCad first in Timer/Inverted Timer, then doubled output, tripled output and then finally near stable tripled output.
+![]()
