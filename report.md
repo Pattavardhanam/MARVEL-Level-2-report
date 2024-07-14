@@ -1,0 +1,6 @@
+# Level 2 report
+## CFD
+My exploration of aerodynamics took a thrilling flight with Autodesk CFD. This powerful software allowed me to delve into the fascinating world of computational fluid dynamics (CFD), offering a visually stunning experience.  Autodesk CFD's strength lies in its meticulous detail, enabling the simulation of various fluids (compressible or incompressible) and even incorporating heat transfer.  In this project, I harnessed the DAT to Spline plugin to streamline the process.  After acquiring the coordinates for a NACA 2412 airfoil from an online database, I meticulously crafted a wing model in Fusion360, with the ability to precisely adjust its scale, camber, and offset.  The completed wing, assigned aluminum properties, was then seamlessly imported into the CFD environment.
+
+To simulate real-world conditions, I meticulously constructed a virtual win m/s tunnel around the wing model. The surrounding fluid was designated as air, and a realistic wind velocity of 2 was set.  The simulation meticulously ran through 25 iterations, generating a wealth of data for various parameters.  This rich dataset allowed me to calculate the crucial aerodynamic forces acting on the wing: drag coefficient and lift. This project provided a deeper understanding of how air interacts with a wing, offering valuable insights into the science of flight.
+
