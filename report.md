@@ -4,3 +4,58 @@ My exploration of aerodynamics took a thrilling flight with Autodesk CFD. This p
 
 To simulate real-world conditions, I meticulously constructed a virtual win m/s tunnel around the wing model. The surrounding fluid was designated as air, and a realistic wind velocity of 2 was set.  The simulation meticulously ran through 25 iterations, generating a wealth of data for various parameters.  This rich dataset allowed me to calculate the crucial aerodynamic forces acting on the wing: drag coefficient and lift. This project provided a deeper understanding of how air interacts with a wing, offering valuable insights into the science of flight.
 
+![CFD 1](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-05-11%20183927.png?raw=true)
+![CFD 2](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-05-11%20212616.png?raw=true)
+
+## Sourcing and Materials Selection
+Frame:
+Material: High-tensile steel or aluminum alloy (lightweight and durable for rider weight)
+Style: Step-through or traditional (depending on rider preference)
+Size: Select frame size based on rider height for optimal comfort and control.
+
+Fork:
+Material: Rigid steel or suspension fork (suspension offers better comfort on rough terrain)
+Compatibility: Ensure fork fits the chosen frame's head tube.
+Wheels:
+Size: 700c (28-inch) wheels offer a good balance of speed and comfort.
+Rims: Double-walled aluminum for strength.
+Spokes: Stainless steel spokes for durability.
+Tires: Puncture-resistant tires suitable for the intended terrain (e.g., road or off-road).
+Brakes:
+
+Hydraulic disc brakes: Provide strong, all-weather stopping power for rider and bike weight.
+Drivetrain:
+Shifter: 7-speed or higher cassette for gear range on hills.
+Derailleur: Durable derailleur compatible with chosen shifter and cassette.
+Chain: Rust-resistant chain.
+Electric Motor:
+Power: 250W - 500W (depending on local regulations and desired performance)
+Mid-drive motor: Offers better weight distribution and climbing ability compared to a hub motor.
+
+Battery:
+Capacity: 36V - 48V, 10Ah - 15Ah (higher capacity for longer range)
+Lithium-ion battery: Lightweight and efficient battery technology.
+Consider factors like weight, charging time, and desired range when selecting battery capacity.
+
+Battery Management System (BMS):
+Protects the battery from overcharging, over-discharging, and overheating.
+
+Motor Controller:
+Regulates power delivery from the battery to the motor.
+Choose a controller compatible with the chosen motor and battery voltage.
+
+Display:
+Shows battery level, speed, assist mode, and other riding data.
+
+Crankset:
+Single chainring with a guard for protection.
+
+Handlebars and Grips:
+Select handlebars that provide a comfortable riding position.
+Ergonomic grips for comfort and control.
+
+Saddle:
+A comfortable saddle is essential for longer rides.
+
+Pedals:
+Platform pedals with good grip.
