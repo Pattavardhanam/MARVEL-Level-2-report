@@ -148,30 +148,30 @@ Q_{in} - Q_{out} = C \frac{dT}{dt}
 $$
 
 Where:
-- \( Q_{in} \) is the heat supplied to the system (e.g., from a heater).
-- \( Q_{out} \) is the heat lost to the environment (depends on ambient temperature and insulation).
-- \( C \) is the thermal capacitance (a measure of the system's ability to store heat).
-- \( T \) is the temperature.
-- \( \frac{dT}{dt} \) is the rate of change of temperature over time.
+- $ Q_{in} $ is the heat supplied to the system (e.g., from a heater).
+- $ Q_{out} $ is the heat lost to the environment (depends on ambient temperature and insulation).
+- $ C $ is the thermal capacitance (a measure of the system's ability to store heat).
+- $ T $ is the temperature.
+- $ \frac{dT}{dt} $ is the rate of change of temperature over time.
 
 This equation governs how the temperature evolves over time. The thermostat uses a control logic where heating is activated if the temperature drops below a certain setpoint and deactivated once the setpoint is reached.
 
 #### First-Order Differential Equation for Temperature Control
-The system temperature \( T(t) \) is often modeled as a first-order differential equation:
+The system temperature $ T(t) $ is often modeled as a first-order differential equation:
 
 $$
 \tau \frac{dT}{dt} + T(t) = T_{setpoint}
 $$
 
 Where:
-- \( \tau \) is the time constant of the system (related to how quickly the temperature changes).
-- \( T_{setpoint} \) is the desired temperature to be maintained.
+- $ \tau $ is the time constant of the system (related to how quickly the temperature changes).
+- $ T_{setpoint} $ is the desired temperature to be maintained.
 
 ### 2. Peregrine Falcon Dive Model
 In this project, you simulate the high-speed dive of a peregrine falcon by modeling its velocity and acceleration during the dive.
 
 #### Kinematic Equations
-The falcon's motion can be described using basic physics (kinematics) equations. If the falcon dives under constant acceleration (gravity), its velocity \( v(t) \) and position \( y(t) \) can be calculated as:
+The falcon's motion can be described using basic physics (kinematics) equations. If the falcon dives under constant acceleration (gravity), its velocity $ v(t) $ and position $ y(t) $ can be calculated as:
 
 $$
 v(t) = v_0 + at
@@ -182,26 +182,26 @@ y(t) = y_0 + v_0 t + \frac{1}{2} a t^2
 $$
 
 Where:
-- \( v(t) \) is the velocity at time \( t \).
-- \( v_0 \) is the initial velocity (before the dive).
-- \( a \) is the acceleration due to gravity (approximately \( 9.81 \, \text{m/s}^2 \)).
-- \( t \) is the time elapsed.
-- \( y(t) \) is the position of the falcon as a function of time.
-- \( y_0 \) is the initial height.
+- $ v(t) $ is the velocity at time $ t $.
+- $ v_0 $ is the initial velocity (before the dive).
+- $ a $ is the acceleration due to gravity (approximately $ 9.81 \, \text{m/s}^2 $).
+- $ t $ is the time elapsed.
+- $ y(t) $ is the position of the falcon as a function of time.
+- $ y_0 $ is the initial height.
 
 #### Drag Force
-In real-world scenarios, drag (air resistance) affects the falcon's motion. The drag force \( F_d \) can be expressed as:
+In real-world scenarios, drag (air resistance) affects the falcon's motion. The drag force $ F_d $ can be expressed as:
 
 $$
 F_d = \frac{1}{2} C_d \rho A v^2 - mg
 $$
 
 Where:
-- \( C_d \) is the drag coefficient (depends on the shape of the falcon).
-- \( \rho \) is the air density.
-- \( A \) is the cross-sectional area of the falcon.
-- \( v \) is the falcon's velocity.
-- \( mg \) is the gravitational force
+- $ C_d $ is the drag coefficient (depends on the shape of the falcon).
+- $ \rho $ is the air density.
+- $ A $ is the cross-sectional area of the falcon.
+- $ v $ is the falcon's velocity.
+- $ mg $ is the gravitational force
 
 The presence of drag modifies the acceleration, leading to a terminal velocity when the forces of drag and gravity balance out.
 
