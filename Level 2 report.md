@@ -114,3 +114,101 @@ In this task I built a voltage multiplier circuit using a timer circuit using 55
 This GIF shows the Oscilloscope graph in TinkerCad first in Timer/Inverted Timer, then doubled output, tripled output and then finally near stable tripled output. The oscilloscope on the left is always showing output across the 555 timer output. The oscilloscope on the right varies its output across the different points of the diode capacitor pump circuit to show the multiplied output. [The link to the TinkerCad simuation](https://www.tinkercad.com/things/dQi33wQKAI8-voltage-multiplier-?sharecode=YnaduRegVWhudP53628GcphST_o8Lzpk4tIcEBe1AvU) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QgBlGBeQMCM?si=C9ae9K8EbFPN05e7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## MATLAB ONRAMP
+This is a task from Level 1, but is a prerequistie for the Simulink and Stateflow Onaramps. This gave me a breif overview of how MATLAB works
+The MATLAB Onramp course provides an introduction to the key features of MATLAB, offering a hands-on learning experience. It's structured into several modules that guide users through common tasks, such as performing calculations, writing scripts, and creating visualizations. Key topics include using MATLAB commands, manipulating arrays, creating plots, and importing data.
+
+In the **Stellar Motion project** you analyze the motion of a star relative to Earth by examining the shift in its spectrum. The project focuses on determining the speed at which the star HD94028 is moving away from Earth using the hydrogen alpha line (`656.3 nm`). By comparing the observed wavelength in the star’s spectrum with the known wavelength, you can detect whether the spectrum has been redshifted (indicating motion away from Earth) or blueshifted (indicating motion toward Earth).
+
+The project involves using MATLAB to process and visualize the star's spectrum data from a file (`spectrum_data.mat`) containing spectral information for various stars. The data is plotted and analyzed using the script `stellar_motion.m`, where you can adjust parameters to examine different stars in the dataset. This hands-on approach helps in understanding fundamental astronomical techniques like the Doppler effect and how they are used to study stellar motion.
+
+![Matlab_Project_1](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-09-22%20211123.png?raw=true)
+
+The **Stellar Spectra Comparison project** analyzes a star's light spectrum to determine its velocity relative to Earth by measuring the redshift or blueshift of specific absorption lines, such as the hydrogen alpha line. In this MATLAB-based project, the star HD94028, located in the Leo constellation, is examined by comparing its observed hydrogen alpha line with its known wavelength of 656.3 nanometers. This comparison allows for the calculation of the star's velocity using Doppler shift principles, where redshifts indicate a star moving away from Earth and blueshifts suggest it is approaching. The project demonstrates how astronomers utilize these techniques not only to study stellar motion but also to detect planets through subtle oscillations in a star’s motion.
+
+![Matlab_Project_2](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-09-22%20211621.png?raw=true)
+![Matlab_Certi_](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/certificate_page-0001.jpg?raw=true)
+
+
+## Simulink Onramp
+The Simulink Onramp course offers an engaging, hands-on introduction to Simulink's key features and functionality, guiding users through a series of modules that cover the basics of modeling dynamic systems using block diagrams, running simulations, and integrating with MATLAB. Topics include inspecting signals, building mathematical algorithms, and modeling both discrete and continuous systems. The course features two major projects: the Automotive Performance Modes project, which involves implementing math and logic operators to model vehicle dynamics, and the Thermostat Model project, simulating a basic heating system. Additionally, the Peregrine Falcon Dive project deepens understanding of continuous systems by simulating the falcon's high-speed dive, reinforcing concepts of dynamic systems and continuous-time modeling.
+
+## Thermostat Model and Peregrine Falcon Dive Projects
+
+### 1. Thermostat Model
+In this project, you simulate how a thermostat controls the temperature of a system by turning heating or cooling elements on or off.
+
+#### Energy Balance Equation
+The temperature of a system changes based on the heat entering and leaving it. This can be modeled using the energy balance equation:
+
+$$
+Q_{in} - Q_{out} = C \frac{dT}{dt}
+$$
+
+Where:
+- \( Q_{in} \) is the heat supplied to the system (e.g., from a heater).
+- \( Q_{out} \) is the heat lost to the environment (depends on ambient temperature and insulation).
+- \( C \) is the thermal capacitance (a measure of the system's ability to store heat).
+- \( T \) is the temperature.
+- \( \frac{dT}{dt} \) is the rate of change of temperature over time.
+
+This equation governs how the temperature evolves over time. The thermostat uses a control logic where heating is activated if the temperature drops below a certain setpoint and deactivated once the setpoint is reached.
+
+#### First-Order Differential Equation for Temperature Control
+The system temperature \( T(t) \) is often modeled as a first-order differential equation:
+
+$$
+\tau \frac{dT}{dt} + T(t) = T_{setpoint}
+$$
+
+Where:
+- \( \tau \) is the time constant of the system (related to how quickly the temperature changes).
+- \( T_{setpoint} \) is the desired temperature to be maintained.
+
+### 2. Peregrine Falcon Dive Model
+In this project, you simulate the high-speed dive of a peregrine falcon by modeling its velocity and acceleration during the dive.
+
+#### Kinematic Equations
+The falcon's motion can be described using basic physics (kinematics) equations. If the falcon dives under constant acceleration (gravity), its velocity \( v(t) \) and position \( y(t) \) can be calculated as:
+
+$$
+v(t) = v_0 + at
+$$
+
+$$
+y(t) = y_0 + v_0 t + \frac{1}{2} a t^2
+$$
+
+Where:
+- \( v(t) \) is the velocity at time \( t \).
+- \( v_0 \) is the initial velocity (before the dive).
+- \( a \) is the acceleration due to gravity (approximately \( 9.81 \, \text{m/s}^2 \)).
+- \( t \) is the time elapsed.
+- \( y(t) \) is the position of the falcon as a function of time.
+- \( y_0 \) is the initial height.
+
+#### Drag Force
+In real-world scenarios, drag (air resistance) affects the falcon's motion. The drag force \( F_d \) can be expressed as:
+
+$$
+F_d = \frac{1}{2} C_d \rho A v^2 - mg
+$$
+
+Where:
+- \( C_d \) is the drag coefficient (depends on the shape of the falcon).
+- \( \rho \) is the air density.
+- \( A \) is the cross-sectional area of the falcon.
+- \( v \) is the falcon's velocity.
+- \( mg \) is the gravitational force
+
+The presence of drag modifies the acceleration, leading to a terminal velocity when the forces of drag and gravity balance out.
+
+These models form the basis of simulating the dynamic behavior in both projects.
+
+![Ckt](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-09-16%20213731.png?raw=true)
+![Out](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-09-16%20213752.png?raw=true)
+![Certi](https://github.com/Pattavardhanam/MARVEL-Level-2-report/blob/main/Pics/Screenshot%202024-09-25%20194422.png?raw=true)
+
+## Stateflow Onramp
